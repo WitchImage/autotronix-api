@@ -25,7 +25,7 @@ export default class UsersController {
         }
 
         delete authAttempt.user.password;
-        return response.ok({ ...authAttempt.user, token: authAttempt.token });
+        return response.ok({ user: authAttempt.user, token: authAttempt.token });
     }
 
     async store({ request, response }: HttpContextContract) {
