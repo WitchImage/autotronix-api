@@ -10,7 +10,14 @@ export default class extends BaseSchema {
             table.string('surname').notNullable();
             table.string('phone').notNullable();
             table.string('address').notNullable();
-            table.string('type');
+            table
+                .integer('user_id')
+                .unsigned()
+                .references('id')
+                .inTable('users')
+                .nullable()
+                .onDelete('NO ACTION')
+                .onUpdate('CASCADE');
 
             /**
              * Uses timestamptz for PostgreSQL and DATETIME2 for MSSQL

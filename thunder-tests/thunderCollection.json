@@ -1,0 +1,17 @@
+[
+  {
+    "_id": "83ed0fef-9b26-40ef-8b98-75fd6fead82a",
+    "colName": "autotronix",
+    "created": "2023-04-13T22:18:36.461Z",
+    "sortNum": 10000,
+    "folders": [
+      {
+        "_id": "ca3eefe4-ab14-4b0b-8872-f98fc1044315",
+        "name": "users",
+        "containerId": "",
+        "created": "2023-04-13T22:18:42.606Z",
+        "sortNum": 10000
+      }
+    ]
+  }
+]
