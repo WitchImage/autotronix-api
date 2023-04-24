@@ -19,3 +19,4 @@
 */
 
 import './routes/auth.routes';
+import './routes/client.routes';

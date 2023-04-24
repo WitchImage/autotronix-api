@@ -10,6 +10,7 @@ export default class extends BaseSeeder {
                 surname: 'Alimañana',
                 phone: '573132143975',
                 address: 'Avenida siempre viva',
+                document: '9999',
             },
             {
                 id: 2,
@@ -17,6 +18,7 @@ export default class extends BaseSeeder {
                 surname: 'Gómez',
                 phone: '573132143975',
                 address: 'Avenida siempre viva',
+                document: '8888',
             },
             {
                 id: 3,
@@ -24,6 +26,7 @@ export default class extends BaseSeeder {
                 surname: 'Muñoz Osorio',
                 phone: '573132143975',
                 address: 'Avenida siempre viva',
+                document: '7777',
             },
         ]);
     }

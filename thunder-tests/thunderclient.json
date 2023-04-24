@@ -36,5 +36,33 @@
       "form": []
     },
     "tests": []
+  },
+  {
+    "_id": "07938c24-0a00-4f4b-aa26-42c305021c50",
+    "colId": "83ed0fef-9b26-40ef-8b98-75fd6fead82a",
+    "containerId": "d828e8fd-848d-4121-be73-5596a78ae70e",
+    "name": "getByDocument",
+    "url": "localhost:8000/clients/document/9999",
+    "method": "GET",
+    "sortNum": 20000,
+    "created": "2023-04-24T19:40:02.128Z",
+    "modified": "2023-04-24T19:41:23.328Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "1a93f0c6-211f-44b2-89e5-cf752e90c4c2",
+    "colId": "83ed0fef-9b26-40ef-8b98-75fd6fead82a",
+    "containerId": "d828e8fd-848d-4121-be73-5596a78ae70e",
+    "name": "show",
+    "url": "localhost:8000/clients/3",
+    "method": "GET",
+    "sortNum": 30000,
+    "created": "2023-04-24T19:47:28.824Z",
+    "modified": "2023-04-24T19:47:39.051Z",
+    "headers": [],
+    "params": [],
+    "tests": []
   }
 ]
