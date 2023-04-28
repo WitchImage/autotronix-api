@@ -20,3 +20,4 @@
 
 import './routes/auth.routes';
 import './routes/client.routes';
+import './routes/service.routes';
