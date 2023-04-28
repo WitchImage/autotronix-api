@@ -22,10 +22,10 @@ export default class Request extends BaseModel {
     public receptionistId: number;
 
     @column()
-    startDate: DateTime;
+    public startDate: DateTime;
 
     @column()
-    endDate: DateTime;
+    public endDate: DateTime;
 
     @column.dateTime({ autoCreate: true })
     public createdAt: DateTime;

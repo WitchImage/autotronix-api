@@ -24,9 +24,6 @@ export default class Receptionist extends BaseModel {
     @column()
     public salary: number;
 
-    @column()
-    public userId: number;
-
     @column.dateTime({ autoCreate: true })
     public createdAt: DateTime;
 

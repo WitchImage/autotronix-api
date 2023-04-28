@@ -12,7 +12,7 @@ export default class extends BaseSchema {
             table.float('tax').notNullable();
             table.float('discount').nullable();
             table
-                .integer('requested_id')
+                .integer('request_id')
                 .unsigned()
                 .references('id')
                 .inTable('requests')
@@ -21,6 +21,7 @@ export default class extends BaseSchema {
             /**
              * Uses timestamptz for PostgreSQL and DATETIME2 for MSSQL
              */
+            table.timestamp('date', { useTz: true });
             table.timestamp('created_at', { useTz: true });
             table.timestamp('updated_at', { useTz: true });
         });

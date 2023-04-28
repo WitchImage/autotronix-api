@@ -10,9 +10,8 @@ export default class extends BaseSchema {
             table.string('name').notNullable();
             table.string('surname').notNullable();
             table.string('phone').notNullable();
-            table.string('address');
-            table.float('salary');
-            table.integer('user_id').unsigned().references('id').inTable('users');
+            table.string('address').notNullable();
+            table.float('salary', 10, 2).notNullable();
 
             /**
              * Uses timestamptz for PostgreSQL and DATETIME2 for MSSQL
