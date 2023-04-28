@@ -10,11 +10,7 @@ export default class extends BaseSchema {
             table.string('state');
             table.boolean('seen');
             table.integer('days_delay');
-            table
-                .integer('service_requested_id')
-                .unsigned()
-                .references('id')
-                .inTable('service_requesteds');
+            table.integer('requested_id').unsigned().references('id').inTable('requests');
 
             /**
              * Uses timestamptz for PostgreSQL and DATETIME2 for MSSQL

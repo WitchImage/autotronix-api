@@ -2,8 +2,8 @@ import { DateTime } from 'luxon';
 import { BaseModel, BelongsTo, HasMany, belongsTo, column, hasMany } from '@ioc:Adonis/Lucid/Orm';
 import User from './User';
 import Vehicle from './Vehicle';
-import ServiceRequested from './ServiceRequested';
 import Pqr from './Pqr';
+import Request from './Request';
 
 export default class Client extends BaseModel {
     @column({ isPrimary: true })
@@ -36,8 +36,8 @@ export default class Client extends BaseModel {
     @hasMany(() => Vehicle)
     public vehicles: HasMany<typeof Vehicle>;
 
-    @hasMany(() => ServiceRequested)
-    public servicesRequested: HasMany<typeof ServiceRequested>;
+    @hasMany(() => Request)
+    public requests: HasMany<typeof Request>;
 
     @hasMany(() => Pqr)
     public pqrs: HasMany<typeof Pqr>;

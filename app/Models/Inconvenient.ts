@@ -1,12 +1,13 @@
 import { DateTime } from 'luxon';
-import { BaseModel, column } from '@ioc:Adonis/Lucid/Orm';
+import { BaseModel, BelongsTo, belongsTo, column } from '@ioc:Adonis/Lucid/Orm';
+import Request from './Request';
 
 export default class Inconvenient extends BaseModel {
     @column({ isPrimary: true })
     public id: number;
 
     @column()
-    public serviceRequestedId: number;
+    public requestId: number;
 
     @column()
     public daysDelay: number;
@@ -28,4 +29,7 @@ export default class Inconvenient extends BaseModel {
 
     @column.dateTime({ autoCreate: true, autoUpdate: true })
     public updatedAt: DateTime;
+
+    @belongsTo(() => Request)
+    public request: BelongsTo<typeof Request>;
 }

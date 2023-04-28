@@ -3,7 +3,7 @@ import { BaseModel, BelongsTo, belongsTo, column } from '@ioc:Adonis/Lucid/Orm';
 import Client from './Client';
 import Receptionist from './Receptionist';
 
-export default class ServiceRequested extends BaseModel {
+export default class Request extends BaseModel {
     @column({ isPrimary: true })
     public id: number;
 
