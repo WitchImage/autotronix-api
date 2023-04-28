@@ -1,6 +1,9 @@
 import { DateTime } from 'luxon';
-import { BaseModel, BelongsTo, belongsTo, column } from '@ioc:Adonis/Lucid/Orm';
+import { BaseModel, BelongsTo, HasMany, belongsTo, column, hasMany } from '@ioc:Adonis/Lucid/Orm';
 import User from './User';
+import Vehicle from './Vehicle';
+import ServiceRequested from './ServiceRequested';
+import Pqr from './Pqr';
 
 export default class Client extends BaseModel {
     @column({ isPrimary: true })
@@ -24,12 +27,21 @@ export default class Client extends BaseModel {
     @column()
     public userId: number;
 
-    @belongsTo(() => User)
-    public user: BelongsTo<typeof User>;
-
     @column.dateTime({ autoCreate: true })
     public createdAt: DateTime;
 
     @column.dateTime({ autoCreate: true, autoUpdate: true })
     public updatedAt: DateTime;
+
+    @hasMany(() => Vehicle)
+    public vehicles: HasMany<typeof Vehicle>;
+
+    @hasMany(() => ServiceRequested)
+    public servicesRequested: HasMany<typeof ServiceRequested>;
+
+    @hasMany(() => Pqr)
+    public pqrs: HasMany<typeof Pqr>;
+
+    @belongsTo(() => User)
+    public user: BelongsTo<typeof User>;
 }

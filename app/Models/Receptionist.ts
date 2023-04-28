@@ -1,5 +1,6 @@
 import { DateTime } from 'luxon';
-import { BaseModel, column } from '@ioc:Adonis/Lucid/Orm';
+import { BaseModel, HasMany, column, hasMany } from '@ioc:Adonis/Lucid/Orm';
+import ServiceRequested from './ServiceRequested';
 
 export default class Receptionist extends BaseModel {
     @column({ isPrimary: true })
@@ -31,4 +32,7 @@ export default class Receptionist extends BaseModel {
 
     @column.dateTime({ autoCreate: true, autoUpdate: true })
     public updatedAt: DateTime;
+
+    @hasMany(() => ServiceRequested)
+    public services: HasMany<typeof ServiceRequested>;
 }
