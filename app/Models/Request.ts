@@ -1,7 +1,15 @@
 import { DateTime } from 'luxon';
-import { BaseModel, BelongsTo, belongsTo, column } from '@ioc:Adonis/Lucid/Orm';
+import {
+    BaseModel,
+    BelongsTo,
+    ManyToMany,
+    belongsTo,
+    column,
+    manyToMany,
+} from '@ioc:Adonis/Lucid/Orm';
 import Client from './Client';
 import Receptionist from './Receptionist';
+import Service from './Service';
 
 export default class Request extends BaseModel {
     @column({ isPrimary: true })
@@ -30,4 +38,14 @@ export default class Request extends BaseModel {
 
     @belongsTo(() => Receptionist)
     public receptionist: BelongsTo<typeof Receptionist>;
+
+    @manyToMany(() => Service, {
+        pivotTable: 'request_services',
+        localKey: 'id',
+        pivotForeignKey: 'request_id',
+        relatedKey: 'id',
+        pivotRelatedForeignKey: 'service_id',
+        pivotTimestamps: true,
+    })
+    public services: ManyToMany<typeof Service>;
 }
