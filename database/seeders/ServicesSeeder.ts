@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import BaseSeeder from '@ioc:Adonis/Lucid/Seeder';
 import Invoice from 'App/Models/Invoice';
 import Receptionist from 'App/Models/Receptionist';
