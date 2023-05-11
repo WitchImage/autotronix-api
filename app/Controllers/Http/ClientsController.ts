@@ -15,4 +15,10 @@ export default class ClientsController {
 
         return response.ok(client);
     }
+
+    async getByUserId({ response, params: { userId } }: HttpContextContract) {
+        const client = await Client.query().where('user_id', userId).preload('user').firstOrFail();
+
+        return response.ok(client);
+    }
 }

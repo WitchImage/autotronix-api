@@ -92,5 +92,37 @@
     "headers": [],
     "params": [],
     "tests": []
+  },
+  {
+    "_id": "e42dcf31-cab1-4551-8ccb-d39124147c6b",
+    "colId": "83ed0fef-9b26-40ef-8b98-75fd6fead82a",
+    "containerId": "d828e8fd-848d-4121-be73-5596a78ae70e",
+    "name": "getByDocument Copy",
+    "url": "https://autotronix.onrender.com/clients/document/7777",
+    "method": "GET",
+    "sortNum": 25000,
+    "created": "2023-05-08T02:24:05.985Z",
+    "modified": "2023-05-08T02:44:49.460Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "9b135429-c98b-4d39-8d07-c10d792dbbcc",
+    "colId": "83ed0fef-9b26-40ef-8b98-75fd6fead82a",
+    "containerId": "d828e8fd-848d-4121-be73-5596a78ae70e",
+    "name": "getByUserId",
+    "url": "http://localhost:8000/clients/profile/1",
+    "method": "GET",
+    "sortNum": 27500,
+    "created": "2023-05-11T02:48:26.838Z",
+    "modified": "2023-05-11T02:51:56.211Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "MQ.U66QFNjPeL97bk2XJ8M-6H4SRW-YmQ5W9SJ_d3ehY9HqD4-55xpSbJKoZ3Oh"
+    },
+    "tests": []
   }
 ]
