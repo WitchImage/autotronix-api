@@ -22,17 +22,17 @@
     "_id": "103bd5a2-e19b-44a3-b7b8-bcaf6230408b",
     "colId": "83ed0fef-9b26-40ef-8b98-75fd6fead82a",
     "containerId": "ca3eefe4-ab14-4b0b-8872-f98fc1044315",
-    "name": "login",
-    "url": "localhost:8000/auth/login",
+    "name": "login  remote",
+    "url": "https://autotronix.onrender.com/auth/login",
     "method": "POST",
     "sortNum": 20000,
     "created": "2023-04-24T19:22:59.389Z",
-    "modified": "2023-04-24T19:23:43.778Z",
+    "modified": "2023-05-11T20:34:42.228Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"email\": \"juanito@gmail.com\",\n  \"password\": \"1234\"\n}",
+      "raw": "{\n  \"email\": \"simonfelipeosorio@gmail.com\",\n  \"password\": \"Cisco123.\"\n}",
       "form": []
     },
     "tests": []
@@ -97,7 +97,7 @@
     "_id": "e42dcf31-cab1-4551-8ccb-d39124147c6b",
     "colId": "83ed0fef-9b26-40ef-8b98-75fd6fead82a",
     "containerId": "d828e8fd-848d-4121-be73-5596a78ae70e",
-    "name": "getByDocument Copy",
+    "name": "getByDocument remote",
     "url": "https://autotronix.onrender.com/clients/document/7777",
     "method": "GET",
     "sortNum": 25000,
@@ -122,6 +122,66 @@
     "auth": {
       "type": "bearer",
       "bearer": "MQ.U66QFNjPeL97bk2XJ8M-6H4SRW-YmQ5W9SJ_d3ehY9HqD4-55xpSbJKoZ3Oh"
+    },
+    "tests": []
+  },
+  {
+    "_id": "49eee774-ef26-4d8a-9035-1d76bb1d8300",
+    "colId": "83ed0fef-9b26-40ef-8b98-75fd6fead82a",
+    "containerId": "d828e8fd-848d-4121-be73-5596a78ae70e",
+    "name": "getByUserId remote",
+    "url": "https://autotronix.onrender.com/clients/profile/1",
+    "method": "GET",
+    "sortNum": 28750,
+    "created": "2023-05-11T03:42:25.182Z",
+    "modified": "2023-05-11T03:43:02.213Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "NDI.xvWyWyRTPwDmaaVER-LqC27GR1AgnbxFuD8VsBYBBN9576XgazU4yuiv3r-4"
+    },
+    "tests": []
+  },
+  {
+    "_id": "7bd4792f-e523-4ccc-bea4-05a1a61d7e26",
+    "colId": "83ed0fef-9b26-40ef-8b98-75fd6fead82a",
+    "containerId": "ca3eefe4-ab14-4b0b-8872-f98fc1044315",
+    "name": "login",
+    "url": "localhost:8000/auth/login",
+    "method": "POST",
+    "sortNum": 30000,
+    "created": "2023-05-11T20:33:34.221Z",
+    "modified": "2023-05-11T20:33:34.221Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"email\": \"juanito@gmail.com\",\n  \"password\": \"1234\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "baa9afd0-de49-41ab-84d7-0afdad990aa7",
+    "colId": "83ed0fef-9b26-40ef-8b98-75fd6fead82a",
+    "containerId": "d828e8fd-848d-4121-be73-5596a78ae70e",
+    "name": "update",
+    "url": "localhost:8000/clients/1",
+    "method": "PUT",
+    "sortNum": 40000,
+    "created": "2023-05-11T22:36:41.405Z",
+    "modified": "2023-05-11T22:42:14.757Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"email\": \"test@gmail.com\",\n  \"name\": \"Juanito Updated 2\",\n  \"surname\": \"Alimaña Updated\",\n  \"address\": \"Cableplaza\",\n  \"phone\": \"3132143975\"\n}",
+      "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "Mw.iR5mxqA8PhWEdHSMU0CRbHSPN1NgbenCx5T01lVQKhyxYh0VXBhBPQlwJBvc"
     },
     "tests": []
   }
