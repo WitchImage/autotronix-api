@@ -6,4 +6,16 @@ export default class RequestsController {
         const requests = await Request.findBy('client_id', clientId);
         return response.ok(requests ?? []);
     }
+
+    async show({ response, params: { id } }: HttpContextContract) {
+        const request = await Request.query()
+            .where('id', id)
+            .preload('client')
+            .preload('receptionist')
+            .preload('services')
+            .preload('invoice')
+            .firstOrFail();
+
+        return response.ok(request);
+    }
 }

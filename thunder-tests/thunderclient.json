@@ -83,7 +83,7 @@
     "_id": "c5626e31-c186-499a-a9e5-90088bedd4f8",
     "colId": "83ed0fef-9b26-40ef-8b98-75fd6fead82a",
     "containerId": "a7f84cb1-2cd2-42b5-8f0f-4c31daf2653f",
-    "name": "index Copy",
+    "name": "index",
     "url": "localhost:8000/requests/client/3",
     "method": "GET",
     "sortNum": 10000,
@@ -152,12 +152,12 @@
     "method": "POST",
     "sortNum": 30000,
     "created": "2023-05-11T20:33:34.221Z",
-    "modified": "2023-05-11T20:33:34.221Z",
+    "modified": "2023-05-12T21:07:56.610Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"email\": \"juanito@gmail.com\",\n  \"password\": \"1234\"\n}",
+      "raw": "{\n  \"email\": \"test@gmail.com\",\n  \"password\": \"1234\"\n}",
       "form": []
     },
     "tests": []
@@ -182,6 +182,24 @@
     "auth": {
       "type": "bearer",
       "bearer": "Mw.iR5mxqA8PhWEdHSMU0CRbHSPN1NgbenCx5T01lVQKhyxYh0VXBhBPQlwJBvc"
+    },
+    "tests": []
+  },
+  {
+    "_id": "a69f81f7-a605-446d-95dd-4ee443ae8168",
+    "colId": "83ed0fef-9b26-40ef-8b98-75fd6fead82a",
+    "containerId": "a7f84cb1-2cd2-42b5-8f0f-4c31daf2653f",
+    "name": "show",
+    "url": "localhost:8000/requests/1",
+    "method": "GET",
+    "sortNum": 20000,
+    "created": "2023-05-12T20:56:59.021Z",
+    "modified": "2023-05-12T21:08:08.381Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "NA.tdXyNNO6SkVESr42Ufg5Or1CZu2W63hUpr4w7-lpGuDumaFyJssbQrZlhg6K"
     },
     "tests": []
   }
