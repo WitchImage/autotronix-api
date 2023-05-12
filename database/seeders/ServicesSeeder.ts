@@ -4,6 +4,7 @@ import BaseSeeder from '@ioc:Adonis/Lucid/Seeder';
 import Invoice from 'App/Models/Invoice';
 import Receptionist from 'App/Models/Receptionist';
 import Request from 'App/Models/Request';
+import RequestService from 'App/Models/RequestService';
 import Service from 'App/Models/Service';
 import { DateTime } from 'luxon';
 
@@ -59,6 +60,19 @@ export default class extends BaseSeeder {
                 receptionistId: 1,
                 startDate: DateTime.now().toString(),
                 endDate: DateTime.now().plus({ days: 30 }).toString(),
+            },
+        ]);
+
+        await RequestService.updateOrCreateMany('id', [
+            {
+                id: 1,
+                requestId: 1,
+                serviceId: 1,
+            },
+            {
+                id: 2,
+                requestId: 1,
+                serviceId: 2,
             },
         ]);
 
