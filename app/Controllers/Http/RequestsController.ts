@@ -3,8 +3,8 @@ import Request from 'App/Models/Request';
 
 export default class RequestsController {
     async indexByClient({ response, params: { clientId } }: HttpContextContract) {
-        const requests = await Request.findBy('client_id', clientId);
-        return response.ok(requests ?? []);
+        const requests = await Request.query().where('client_id', clientId);
+        return response.ok(requests);
     }
 
     async show({ response, params: { id } }: HttpContextContract) {
