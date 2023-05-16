@@ -7,6 +7,11 @@ export default class PqrsController {
         return response.ok(pqrs);
     }
 
+    async indexForClient({ response, params: { clientId } }: HttpContextContract) {
+        const pqrs = await Pqr.query().where('client_id', clientId);
+        return response.ok(pqrs);
+    }
+
     async show({ response, params: { id } }: HttpContextContract) {
         const pqr = await Pqr.query().where('id', id).preload('client').firstOrFail();
         return response.ok(pqr);
