@@ -18,7 +18,11 @@ export default class ClientsController {
     }
 
     async getByUserId({ response, params: { userId } }: HttpContextContract) {
-        const client = await Client.query().where('user_id', userId).preload('user').firstOrFail();
+        const client = await Client.query()
+            .where('user_id', userId)
+            .preload('user')
+            .preload('vehicles')
+            .firstOrFail();
 
         return response.ok(client);
     }
@@ -49,6 +53,7 @@ export default class ClientsController {
         const clientUpdated = await Client.query()
             .where('id', clientId)
             .preload('user')
+            .preload('vehicles')
             .firstOrFail();
 
         return response.ok(clientUpdated);

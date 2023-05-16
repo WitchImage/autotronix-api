@@ -116,12 +116,12 @@
     "method": "GET",
     "sortNum": 27500,
     "created": "2023-05-11T02:48:26.838Z",
-    "modified": "2023-05-11T02:51:56.211Z",
+    "modified": "2023-05-16T20:23:29.685Z",
     "headers": [],
     "params": [],
     "auth": {
       "type": "bearer",
-      "bearer": "MQ.U66QFNjPeL97bk2XJ8M-6H4SRW-YmQ5W9SJ_d3ehY9HqD4-55xpSbJKoZ3Oh"
+      "bearer": "NQ.jCzR57Rf27jrTsNsjkEBLFNvEvK0WGE1KMr88k2EKadBWVSSdy_YakmoAQ-c"
     },
     "tests": []
   },
@@ -171,12 +171,12 @@
     "method": "PUT",
     "sortNum": 40000,
     "created": "2023-05-11T22:36:41.405Z",
-    "modified": "2023-05-11T22:42:14.757Z",
+    "modified": "2023-05-16T20:24:35.110Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"email\": \"test@gmail.com\",\n  \"name\": \"Juanito Updated 2\",\n  \"surname\": \"Alimaña Updated\",\n  \"address\": \"Cableplaza\",\n  \"phone\": \"3132143975\"\n}",
+      "raw": "{\n  \"email\": \"test@gmail.com\",\n  \"name\": \"Juanito\",\n  \"surname\": \"Alimaña\",\n  \"address\": \"Cableplaza\",\n  \"phone\": \"3132143975\"\n}",
       "form": []
     },
     "auth": {
