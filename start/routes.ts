@@ -23,3 +23,4 @@ import './routes/client.routes';
 import './routes/service.routes';
 import './routes/request.routes';
 import './routes/pqr.routes';
+import './routes/inconvenient.routes';

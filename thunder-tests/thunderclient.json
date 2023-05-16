@@ -293,5 +293,41 @@
       "bearer": "Ng.esZYeDSf6SLD04KBKokwZh5WAgXc14MYFs5mJHkKZWVmnR986yY1E9eULZnU"
     },
     "tests": []
+  },
+  {
+    "_id": "5d872180-7291-4943-9a32-4387514353d9",
+    "colId": "83ed0fef-9b26-40ef-8b98-75fd6fead82a",
+    "containerId": "72ae0f22-2b13-4388-bac8-80546931d252",
+    "name": "indexForClient",
+    "url": "localhost:8000/inconvenients/client/1",
+    "method": "GET",
+    "sortNum": 10000,
+    "created": "2023-05-16T23:07:43.251Z",
+    "modified": "2023-05-16T23:11:31.161Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "Ng.esZYeDSf6SLD04KBKokwZh5WAgXc14MYFs5mJHkKZWVmnR986yY1E9eULZnU"
+    },
+    "tests": []
+  },
+  {
+    "_id": "9f971f7b-d7e3-4778-a0b8-033324fcd753",
+    "colId": "83ed0fef-9b26-40ef-8b98-75fd6fead82a",
+    "containerId": "72ae0f22-2b13-4388-bac8-80546931d252",
+    "name": "indexForRequest",
+    "url": "localhost:8000/inconvenients/request/2",
+    "method": "GET",
+    "sortNum": 20000,
+    "created": "2023-05-16T23:10:53.927Z",
+    "modified": "2023-05-16T23:11:18.894Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "Ng.esZYeDSf6SLD04KBKokwZh5WAgXc14MYFs5mJHkKZWVmnR986yY1E9eULZnU"
+    },
+    "tests": []
   }
 ]
