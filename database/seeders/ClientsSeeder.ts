@@ -42,7 +42,7 @@ export default class extends BaseSeeder {
                 year: '2018',
             },
             {
-                id: 1,
+                id: 2,
                 clientId: 1,
                 color: 'white',
                 description: 'My description',
@@ -51,8 +51,8 @@ export default class extends BaseSeeder {
                 year: '2013',
             },
             {
-                id: 2,
-                clientId: 1,
+                id: 3,
+                clientId: 3,
                 color: 'red',
                 description: 'My description',
                 model: 'Mazda 3',
