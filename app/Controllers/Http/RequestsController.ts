@@ -3,7 +3,7 @@ import Request from 'App/Models/Request';
 
 export default class RequestsController {
     async indexByClient({ response, params: { clientId } }: HttpContextContract) {
-        const requests = await Request.query().where('client_id', clientId);
+        const requests = await Request.query().where('client_id', clientId).preload('services');
         return response.ok(requests);
     }
 
