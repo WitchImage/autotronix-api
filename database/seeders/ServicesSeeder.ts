@@ -1,6 +1,7 @@
 // @ts-nocheck
 
 import BaseSeeder from '@ioc:Adonis/Lucid/Seeder';
+import Inconvenient from 'App/Models/Inconvenient';
 import Invoice from 'App/Models/Invoice';
 import Receptionist from 'App/Models/Receptionist';
 import Request from 'App/Models/Request';
@@ -94,6 +95,36 @@ export default class extends BaseSeeder {
                 description: 'Invoice test 2',
                 tax: 0.19,
                 date: DateTime.now().toString(),
+            },
+        ]);
+
+        await Inconvenient.updateOrCreateMany('id', [
+            {
+                id: 1,
+                date: DateTime.now().toString(),
+                daysDelay: 5,
+                description: 'Se murió un mecánico',
+                seen: false,
+                state: 'pending',
+                requestId: 1,
+            },
+            {
+                id: 2,
+                date: DateTime.now().toString(),
+                daysDelay: 14,
+                description: 'No hay repuestos',
+                seen: false,
+                state: 'pending',
+                requestId: 1,
+            },
+            {
+                id: 3,
+                date: DateTime.now().toString(),
+                daysDelay: 5,
+                description: 'Se murió un mecánico',
+                seen: false,
+                state: 'pending',
+                requestId: 2,
             },
         ]);
     }
