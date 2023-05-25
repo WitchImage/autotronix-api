@@ -14,6 +14,7 @@ export default class RequestsController {
             .preload('receptionist')
             .preload('services')
             .preload('invoice')
+            .preload('inconvenients')
             .firstOrFail();
 
         return response.ok(request);
