@@ -42,6 +42,15 @@ export default class extends BaseSeeder {
                 year: '2018',
             },
             {
+                id: 4,
+                clientId: 1,
+                color: 'blue',
+                description: 'My description 2',
+                model: 'Ford Fiesta',
+                plate: 'XXX-777',
+                year: '2015',
+            },
+            {
                 id: 2,
                 clientId: 1,
                 color: 'white',
