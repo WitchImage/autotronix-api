@@ -38,7 +38,7 @@ export default class UsersController {
         const userBody: { email: string; password: string } = request.only(['email', 'password']);
         const clientBody = request.only(['name', 'surname', 'phone', 'address', 'id']);
 
-        const userCreated = await User.create(userBody);
+        const userCreated = await User.create({ ...userBody, role: 'client' });
 
         const clientToUpdate = await Client.find(clientBody.id);
         await clientToUpdate?.merge({ ...clientBody, userId: userCreated.id }).save();
