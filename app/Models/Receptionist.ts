@@ -1,4 +1,3 @@
-import { DateTime } from 'luxon';
 import { BaseModel, HasMany, column, hasMany } from '@ioc:Adonis/Lucid/Orm';
 import Request from './Request';
 
@@ -24,11 +23,8 @@ export default class Receptionist extends BaseModel {
     @column()
     public salary: number;
 
-    @column.dateTime({ autoCreate: true })
-    public createdAt: DateTime;
-
-    @column.dateTime({ autoCreate: true, autoUpdate: true })
-    public updatedAt: DateTime;
+    @column()
+    public userId: number;
 
     @hasMany(() => Request)
     public services: HasMany<typeof Request>;
