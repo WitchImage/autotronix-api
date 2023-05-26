@@ -20,6 +20,7 @@ export default class extends BaseSeeder {
                 address: 'Avenida siempre viva',
                 email: 'recepcionista@gmail.com',
                 salary: 1200000,
+                userId: 2,
             },
         ]);
 
