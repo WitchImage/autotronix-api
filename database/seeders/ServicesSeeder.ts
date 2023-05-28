@@ -51,30 +51,19 @@ export default class extends BaseSeeder {
         await Request.updateOrCreateMany('id', [
             {
                 id: 1,
-                clientId: 1,
+                clientId: 100,
                 receptionistId: 1,
-                startDate: DateTime.now().toString(),
-                endDate: DateTime.now().plus({ days: 30 }).toString(),
-            },
-            {
-                id: 2,
-                clientId: 3,
-                receptionistId: 1,
-                startDate: DateTime.now().toString(),
-                endDate: DateTime.now().plus({ days: 30 }).toString(),
-            },
-        ]);
-
-        await RequestService.updateOrCreateMany('id', [
-            {
-                id: 1,
-                requestId: 1,
                 serviceId: 1,
+                startDate: DateTime.now().toString(),
+                endDate: DateTime.now().plus({ days: 30 }).toString(),
             },
             {
                 id: 2,
-                requestId: 1,
+                clientId: 100,
+                receptionistId: 1,
                 serviceId: 2,
+                startDate: DateTime.now().toString(),
+                endDate: DateTime.now().plus({ days: 30 }).toString(),
             },
         ]);
 
@@ -83,7 +72,7 @@ export default class extends BaseSeeder {
                 id: 1,
                 requestId: 1,
                 discount: 0,
-                totalPrice: 300000,
+                totalPrice: 30000,
                 description: 'Invoice test 1',
                 tax: 0.19,
                 date: DateTime.now().toString(),
@@ -122,7 +111,7 @@ export default class extends BaseSeeder {
                 id: 3,
                 date: DateTime.now().toString(),
                 daysDelay: 5,
-                description: 'Se murió un mecánico',
+                description: 'Explotó el volcán',
                 seen: false,
                 state: 'pending',
                 requestId: 2,
