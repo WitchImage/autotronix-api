@@ -3,7 +3,7 @@ import Request from 'App/Models/Request';
 
 export default class RequestsController {
     async indexByClient({ response, params: { clientId } }: HttpContextContract) {
-        const requests = await Request.query().where('client_id', clientId).preload('services');
+        const requests = await Request.query().where('client_id', clientId).preload('service');
         return response.ok(requests);
     }
 
@@ -12,7 +12,7 @@ export default class RequestsController {
             .where('id', id)
             .preload('client')
             .preload('receptionist')
-            .preload('services')
+            .preload('service')
             .preload('invoice')
             .preload('inconvenients')
             .firstOrFail();

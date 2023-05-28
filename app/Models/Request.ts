@@ -4,12 +4,10 @@ import {
     BelongsTo,
     HasMany,
     HasOne,
-    ManyToMany,
     belongsTo,
     column,
     hasMany,
     hasOne,
-    manyToMany,
 } from '@ioc:Adonis/Lucid/Orm';
 import Client from './Client';
 import Receptionist from './Receptionist';
@@ -33,12 +31,6 @@ export default class Request extends BaseModel {
     @column()
     public endDate: DateTime;
 
-    @column.dateTime({ autoCreate: true })
-    public createdAt: DateTime;
-
-    @column.dateTime({ autoCreate: true, autoUpdate: true })
-    public updatedAt: DateTime;
-
     @belongsTo(() => Client)
     public client: BelongsTo<typeof Client>;
 
@@ -51,13 +43,6 @@ export default class Request extends BaseModel {
     @hasMany(() => Inconvenient)
     public inconvenients: HasMany<typeof Inconvenient>;
 
-    @manyToMany(() => Service, {
-        pivotTable: 'request_services',
-        localKey: 'id',
-        pivotForeignKey: 'request_id',
-        relatedKey: 'id',
-        pivotRelatedForeignKey: 'service_id',
-        pivotTimestamps: true,
-    })
-    public services: ManyToMany<typeof Service>;
+    @belongsTo(() => Service)
+    public service: BelongsTo<typeof Service>;
 }
