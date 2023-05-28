@@ -1,4 +1,3 @@
-import { DateTime } from 'luxon';
 import { BaseModel, column } from '@ioc:Adonis/Lucid/Orm';
 
 export default class Mechanic extends BaseModel {
@@ -31,10 +30,4 @@ export default class Mechanic extends BaseModel {
 
     @column()
     public address: string;
-
-    @column.dateTime({ autoCreate: true })
-    public createdAt: DateTime;
-
-    @column.dateTime({ autoCreate: true, autoUpdate: true })
-    public updatedAt: DateTime;
 }

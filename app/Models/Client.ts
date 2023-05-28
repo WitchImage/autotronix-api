@@ -1,4 +1,3 @@
-import { DateTime } from 'luxon';
 import { BaseModel, BelongsTo, HasMany, belongsTo, column, hasMany } from '@ioc:Adonis/Lucid/Orm';
 import User from './User';
 import Vehicle from './Vehicle';
@@ -26,12 +25,6 @@ export default class Client extends BaseModel {
 
     @column()
     public userId: number;
-
-    @column.dateTime({ autoCreate: true })
-    public createdAt: DateTime;
-
-    @column.dateTime({ autoCreate: true, autoUpdate: true })
-    public updatedAt: DateTime;
 
     @hasMany(() => Vehicle)
     public vehicles: HasMany<typeof Vehicle>;

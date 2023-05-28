@@ -24,12 +24,6 @@ export default class Invoice extends BaseModel {
     @column()
     public date: DateTime;
 
-    @column.dateTime({ autoCreate: true })
-    public createdAt: DateTime;
-
-    @column.dateTime({ autoCreate: true, autoUpdate: true })
-    public updatedAt: DateTime;
-
     @belongsTo(() => Request)
     public service: BelongsTo<typeof Request>;
 }

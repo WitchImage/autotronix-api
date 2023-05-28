@@ -6,7 +6,7 @@ export default class extends BaseSeeder {
     public async run() {
         await Client.updateOrCreateMany('id', [
             {
-                id: 1,
+                id: 100,
                 name: 'Juanito',
                 surname: 'Alimañana',
                 phone: '573132143975',
@@ -14,7 +14,7 @@ export default class extends BaseSeeder {
                 document: '9999',
             },
             {
-                id: 2,
+                id: 102,
                 name: 'Esperanza',
                 surname: 'Gómez',
                 phone: '573132143975',
@@ -22,7 +22,7 @@ export default class extends BaseSeeder {
                 document: '8888',
             },
             {
-                id: 3,
+                id: 103,
                 name: 'Simón Felipe',
                 surname: 'Muñoz Osorio',
                 phone: '573132143975',
@@ -34,7 +34,7 @@ export default class extends BaseSeeder {
         await Vehicle.updateOrCreateMany('id', [
             {
                 id: 1,
-                clientId: 1,
+                clientId: 100,
                 color: 'black',
                 description: 'My description',
                 model: 'Chevrolet Tracker',
@@ -43,7 +43,7 @@ export default class extends BaseSeeder {
             },
             {
                 id: 4,
-                clientId: 1,
+                clientId: 100,
                 color: 'blue',
                 description: 'My description 2',
                 model: 'Ford Fiesta',
@@ -52,7 +52,7 @@ export default class extends BaseSeeder {
             },
             {
                 id: 2,
-                clientId: 1,
+                clientId: 103,
                 color: 'white',
                 description: 'My description',
                 model: 'Renault Duster',
@@ -61,7 +61,7 @@ export default class extends BaseSeeder {
             },
             {
                 id: 3,
-                clientId: 3,
+                clientId: 102,
                 color: 'red',
                 description: 'My description',
                 model: 'Mazda 3',
