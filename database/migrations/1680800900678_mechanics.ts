@@ -15,12 +15,6 @@ export default class extends BaseSchema {
             table.float('commission');
             table.float('salary');
             table.integer('user_id').unsigned().references('id').inTable('users');
-
-            /**
-             * Uses timestamptz for PostgreSQL and DATETIME2 for MSSQL
-             */
-            table.timestamp('created_at', { useTz: true });
-            table.timestamp('updated_at', { useTz: true });
         });
     }
 

@@ -9,12 +9,6 @@ export default class extends BaseSchema {
             table.timestamp('payment_date');
             table.float('amount_paid');
             table.integer('invoice_id').unsigned().references('id').inTable('invoices');
-
-            /**
-             * Uses timestamptz for PostgreSQL and DATETIME2 for MSSQL
-             */
-            table.timestamp('created_at', { useTz: true });
-            table.timestamp('updated_at', { useTz: true });
         });
     }
 

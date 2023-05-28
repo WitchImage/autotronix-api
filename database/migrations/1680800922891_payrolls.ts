@@ -9,12 +9,6 @@ export default class extends BaseSchema {
             table.string('description');
             table.timestamp('start_date', { useTz: true });
             table.timestamp('end_date', { useTz: true });
-
-            /**
-             * Uses timestamptz for PostgreSQL and DATETIME2 for MSSQL
-             */
-            table.timestamp('created_at', { useTz: true });
-            table.timestamp('updated_at', { useTz: true });
         });
     }
 

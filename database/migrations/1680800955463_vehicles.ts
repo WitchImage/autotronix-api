@@ -12,12 +12,6 @@ export default class extends BaseSchema {
             table.string('description');
             table.string('color');
             table.integer('client_id').unsigned().references('id').inTable('clients');
-
-            /**
-             * Uses timestamptz for PostgreSQL and DATETIME2 for MSSQL
-             */
-            table.timestamp('created_at', { useTz: true });
-            table.timestamp('updated_at', { useTz: true });
         });
     }
 

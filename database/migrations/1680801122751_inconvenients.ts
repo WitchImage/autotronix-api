@@ -10,13 +10,8 @@ export default class extends BaseSchema {
             table.string('state');
             table.boolean('seen');
             table.integer('days_delay');
-            table.integer('requested_id').unsigned().references('id').inTable('requests');
-
-            /**
-             * Uses timestamptz for PostgreSQL and DATETIME2 for MSSQL
-             */
-            table.timestamp('created_at', { useTz: true });
-            table.timestamp('updated_at', { useTz: true });
+            table.integer('request_id').unsigned().references('id').inTable('requests');
+            table.timestamp('date');
         });
     }
 

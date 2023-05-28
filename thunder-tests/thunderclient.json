@@ -212,12 +212,12 @@
     "method": "GET",
     "sortNum": 15000,
     "created": "2023-05-15T16:56:18.002Z",
-    "modified": "2023-05-26T23:38:37.209Z",
+    "modified": "2023-05-28T02:22:06.759Z",
     "headers": [],
     "params": [],
     "auth": {
       "type": "bearer",
-      "bearer": "MzM.d698_Unru-OSzQ7Te25okUhgvaDX6XoyFR7L7eskWAA7nKMjqty94FyIL_w7"
+      "bearer": "MzQ.oMj71aBDKif85Y6I5HJ28BxmN9pxHaIftU_HdNaUJJ6WRfaOS0ovKeyv3WvD"
     },
     "tests": []
   },
@@ -363,6 +363,29 @@
     "auth": {
       "type": "bearer",
       "bearer": "MzM.d698_Unru-OSzQ7Te25okUhgvaDX6XoyFR7L7eskWAA7nKMjqty94FyIL_w7"
+    },
+    "tests": []
+  },
+  {
+    "_id": "5f1c6e84-efec-4ca3-a906-ef7eac860236",
+    "colId": "83ed0fef-9b26-40ef-8b98-75fd6fead82a",
+    "containerId": "d11f870c-a472-433b-bd4f-d91b99b9ff16",
+    "name": "store remote",
+    "url": "https://autotronix.onrender.com/pqrs",
+    "method": "POST",
+    "sortNum": 40000,
+    "created": "2023-05-28T02:04:20.596Z",
+    "modified": "2023-05-28T02:06:22.067Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"clientId\": 1,\n  \"message\": \"PQR test\",\n  \"requestType\": \"reclamo\"\n}",
+      "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "MzQ.oMj71aBDKif85Y6I5HJ28BxmN9pxHaIftU_HdNaUJJ6WRfaOS0ovKeyv3WvD"
     },
     "tests": []
   }

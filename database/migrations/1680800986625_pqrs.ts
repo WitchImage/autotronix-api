@@ -6,7 +6,9 @@ export default class extends BaseSchema {
     public async up() {
         this.schema.createTable(this.tableName, (table) => {
             table.increments('id');
-            table.enum('request_type', ['Petición', 'Queja', 'Reclamo', 'Solicitud']).notNullable();
+            table
+                .enum('request_type', ['Petición', 'Queja', 'Reclamo', 'Sugerencia'])
+                .notNullable();
             table.string('message').notNullable();
             table.integer('client_id').unsigned().references('id').inTable('clients');
 

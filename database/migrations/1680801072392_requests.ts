@@ -14,8 +14,6 @@ export default class extends BaseSchema {
              */
             table.timestamp('start_date', { useTz: true });
             table.timestamp('end_date', { useTz: true });
-            table.timestamp('created_at', { useTz: true });
-            table.timestamp('updated_at', { useTz: true });
         });
     }
 

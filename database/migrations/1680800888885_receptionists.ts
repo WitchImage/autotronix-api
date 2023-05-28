@@ -12,12 +12,6 @@ export default class extends BaseSchema {
             table.string('phone').notNullable();
             table.string('address').notNullable();
             table.float('salary', 10, 2).notNullable();
-
-            /**
-             * Uses timestamptz for PostgreSQL and DATETIME2 for MSSQL
-             */
-            table.timestamp('created_at', { useTz: true });
-            table.timestamp('updated_at', { useTz: true });
         });
     }
 

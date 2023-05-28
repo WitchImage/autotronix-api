@@ -8,6 +8,7 @@ export default class extends BaseSchema {
             table.increments('id');
             table.string('name').notNullable();
             table.string('surname').notNullable();
+            table.string('document').unique();
             table.string('phone').notNullable();
             table.string('address').notNullable();
             table
@@ -18,12 +19,6 @@ export default class extends BaseSchema {
                 .nullable()
                 .onDelete('NO ACTION')
                 .onUpdate('CASCADE');
-
-            /**
-             * Uses timestamptz for PostgreSQL and DATETIME2 for MSSQL
-             */
-            table.timestamp('created_at', { useTz: true });
-            table.timestamp('updated_at', { useTz: true });
         });
     }
 
