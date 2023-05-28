@@ -18,10 +18,11 @@ export default class PqrsController {
     }
 
     async store({ response, request }: HttpContextContract) {
-        const { clientId, message } = request.body();
+        const { clientId, message, requestType } = request.body();
         const pqr = await Pqr.create({
             clientId,
             message,
+            requestType,
         });
 
         return response.ok(pqr);

@@ -12,6 +12,9 @@ export default class Pqr extends BaseModel {
     @column()
     public message: string;
 
+    @column()
+    public requestType: string;
+
     @column.dateTime({ autoCreate: true })
     public createdAt: DateTime;
 
