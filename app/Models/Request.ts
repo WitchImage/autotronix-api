@@ -31,6 +31,9 @@ export default class Request extends BaseModel {
     @column()
     public endDate: DateTime;
 
+    @column()
+    public serviceId: number;
+
     @belongsTo(() => Client)
     public client: BelongsTo<typeof Client>;
 
