@@ -3,7 +3,7 @@ import Pqr from 'App/Models/Pqr';
 
 export default class PqrsController {
     async index({ response }: HttpContextContract) {
-        const pqrs = await Pqr.all();
+        const pqrs = await Pqr.query().preload('client');
         return response.ok(pqrs);
     }
 
