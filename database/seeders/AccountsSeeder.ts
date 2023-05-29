@@ -1,4 +1,5 @@
 import BaseSeeder from '@ioc:Adonis/Lucid/Seeder';
+import Admin from 'App/Models/Admin';
 import User from 'App/Models/User';
 
 export default class extends BaseSeeder {
@@ -21,6 +22,16 @@ export default class extends BaseSeeder {
                 email: 'test@gmail.com',
                 password: 'Cisco123.',
                 role: 'receptionist',
+            },
+        ]);
+
+        await Admin.updateOrCreateMany('id', [
+            {
+                id: 100,
+                user_id: 1,
+                name: 'Alejandro',
+                surname: 'Pombo Escobar',
+                phone: '3214535678',
             },
         ]);
     }
