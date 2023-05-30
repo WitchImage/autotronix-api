@@ -11,9 +11,9 @@ export default class RequestsController {
         const request = await Request.query()
             .where('id', id)
             .preload('client')
-            .preload('receptionist')
+            // .preload('receptionist')
             .preload('service')
-            .preload('invoice')
+            // .preload('invoice')
             .preload('inconvenients')
             .firstOrFail();
 
