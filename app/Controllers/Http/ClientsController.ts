@@ -9,10 +9,7 @@ export default class ClientsController {
     }
 
     async getByDocument({ response, params: { document } }: HttpContextContract) {
-        const client = await Client.query()
-            .where('document', document)
-            .preload('user')
-            .firstOrFail();
+        const client = await Client.query().where('id', document).preload('user').firstOrFail();
 
         return response.ok(client);
     }
