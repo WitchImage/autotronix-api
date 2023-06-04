@@ -388,5 +388,41 @@
       "bearer": "MzQ.oMj71aBDKif85Y6I5HJ28BxmN9pxHaIftU_HdNaUJJ6WRfaOS0ovKeyv3WvD"
     },
     "tests": []
+  },
+  {
+    "_id": "365df802-0f01-4591-83bd-71043c52ad99",
+    "colId": "83ed0fef-9b26-40ef-8b98-75fd6fead82a",
+    "containerId": "0f0f48e5-7e54-4394-82b5-7c0c16ef74f5",
+    "name": "getByUserId remote",
+    "url": "https://autotronix.onrender.com/admins/profile/1",
+    "method": "GET",
+    "sortNum": 10000,
+    "created": "2023-06-04T03:20:32.027Z",
+    "modified": "2023-06-04T03:21:09.465Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "NDI.xvWyWyRTPwDmaaVER-LqC27GR1AgnbxFuD8VsBYBBN9576XgazU4yuiv3r-4"
+    },
+    "tests": []
+  },
+  {
+    "_id": "8189156e-5bdf-4243-9825-392665804676",
+    "colId": "83ed0fef-9b26-40ef-8b98-75fd6fead82a",
+    "containerId": "0f0f48e5-7e54-4394-82b5-7c0c16ef74f5",
+    "name": "getByUserId",
+    "url": "localhost:8000/admins/profile/116",
+    "method": "GET",
+    "sortNum": 20000,
+    "created": "2023-06-04T03:21:06.679Z",
+    "modified": "2023-06-04T03:28:55.603Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "NDI.xvWyWyRTPwDmaaVER-LqC27GR1AgnbxFuD8VsBYBBN9576XgazU4yuiv3r-4"
+    },
+    "tests": []
   }
 ]
