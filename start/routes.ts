@@ -19,6 +19,7 @@
 */
 
 import './routes/auth.routes';
+import './routes/admin.routes';
 import './routes/client.routes';
 import './routes/service.routes';
 import './routes/request.routes';
