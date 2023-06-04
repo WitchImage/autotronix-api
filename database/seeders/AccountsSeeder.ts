@@ -28,7 +28,7 @@ export default class extends BaseSeeder {
         await Admin.updateOrCreateMany('id', [
             {
                 id: 100,
-                user_id: 1,
+                userId: 1,
                 name: 'Alejandro',
                 surname: 'Pombo Escobar',
                 phone: '3214535678',

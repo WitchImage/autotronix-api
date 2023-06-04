@@ -152,12 +152,12 @@
     "method": "POST",
     "sortNum": 30000,
     "created": "2023-05-11T20:33:34.221Z",
-    "modified": "2023-05-30T02:56:34.648Z",
+    "modified": "2023-06-04T03:37:04.423Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"email\": \"test@gmail.com\",\n  \"password\": \"Cisco123.\"\n}",
+      "raw": "{\n  \"email\": \"simonfelipeosorio@gmail.com\",\n  \"password\": \"Cisco123.\"\n}",
       "form": []
     },
     "tests": []
@@ -289,12 +289,12 @@
     "method": "GET",
     "sortNum": 15000,
     "created": "2023-05-16T22:33:03.982Z",
-    "modified": "2023-05-16T22:34:02.271Z",
+    "modified": "2023-06-04T03:37:48.903Z",
     "headers": [],
     "params": [],
     "auth": {
       "type": "bearer",
-      "bearer": "Ng.esZYeDSf6SLD04KBKokwZh5WAgXc14MYFs5mJHkKZWVmnR986yY1E9eULZnU"
+      "bearer": "MTE.mmtJ1s05JOq7cQ1PP4rOZ51zdVgLY0l4S0Uitii3ri6aWQzrWIyX_prwD4u8"
     },
     "tests": []
   },
